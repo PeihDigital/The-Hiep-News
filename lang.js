@@ -58,6 +58,9 @@ const langData = {
     "f_ornament": "✦  ✦  ✦",
     "f_copy": "The Hiep Times — Tập V, Số 001 — Toàn bộ bản quyền được bảo lưu — 2026",
     "f_pub": "Xuất bản tại Thành phố Hồ Chí Minh, Việt Nam ✦ Được thiết kế có chủ đích & Chăm chút tỉ mỉ",
+    "mw_title": "Khuyến nghị thiết bị",
+    "mw_desc": "Ấn bản này được thiết kế riêng cho màn hình lớn. Vui lòng sử dụng máy tính để có trải nghiệm thị giác tốt nhất.",
+    "mw_btn": "Tiếp tục xem",
   },
   "en": {
     "m_eye": "Est. 2019 ✦ Ho Chi Minh City, Vietnam ✦ Creative Development & Design",
@@ -118,6 +121,9 @@ const langData = {
     "f_ornament": "✦  ✦  ✦",
     "f_copy": "The Hiep Times — Vol. V, No. 001 — All Rights Reserved — 2026",
     "f_pub": "Published in Ho Chi Minh City, Vietnam ✦ Crafted with Intention & Great Care",
+    "mw_title": "Desktop Recommended",
+    "mw_desc": "This publication is optimized for larger screens. Please use a desktop for the best visual experience.",
+    "mw_btn": "Continue Anyway",
   },
   "ja": {
     "m_eye": "Est. 2019 ✦ ベトナム、ホーチミン市 ✦ クリエイティブ開発 ＆ デザイン",
@@ -178,5 +184,8 @@ const langData = {
     "f_ornament": "✦  ✦  ✦",
     "f_copy": "The Hiep Times — 第V巻・第001号 — 不許複製 — 2026",
     "f_pub": "ベトナム・ホーチミン市にて発行 ✦ 意図と細心の注意を払って丁寧に作り込まれた",
+    "mw_title": "PC閲覧推奨",
+    "mw_desc": "本誌はPC環境に最適化されています。本来のデザインでお楽しみいただくため、PCからのアクセスを推奨いたします。",
+    "mw_btn": "このまま進む",
   }
 };

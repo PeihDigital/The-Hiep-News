@@ -258,6 +258,7 @@ window.addEventListener('load', () => {
                     setTimeout(() => {
                       overlay.style.display = 'none'; 
                       initMainAnimations(); 
+                      checkDeviceAndShowModal();
                     }, 800);
 
                   }, 1200);
@@ -272,3 +273,23 @@ window.addEventListener('load', () => {
     });
   }, 400);
 });
+function checkDeviceAndShowModal() {
+  const isMobile = window.innerWidth <= 768 || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  
+  if (isMobile) {
+    const modal = document.getElementById('mobile-modal');
+    if (modal) {
+      modal.classList.add('show');
+    }
+  }
+}
+
+const modalCloseBtn = document.getElementById('m-modal-close');
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener('click', function() {
+    const modal = document.getElementById('mobile-modal');
+    if (modal) {
+      modal.classList.remove('show');
+    }
+  });
+}
