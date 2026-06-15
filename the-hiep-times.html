@@ -1,0 +1,281 @@
+<!--Tên dự án:
+THE HIEP TIMES — DIGITAL PORTFOLIO
+Thông tin tác giả:
+Designed and Developed by Do Hoa Hiep (tsyo__4)
+Copyright (c) 2026. All Rights Reserved.
+Thông tin giấy phép:
+This source code is protected under the MIT License.
+Feel free to explore, but please respect the intellectual property.
+Stationed in Ho Chi Minh City, Vietnam.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hiep Times — Creative Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome-screen" class="welcome-overlay">
+    <div class="print-container">
+      <div id="print-line1" class="print-text small"></div>
+      <div id="print-line2" class="print-text large"></div>
+      <div id="print-line3" class="print-text small"></div>
+    </div>
+    <div id="welcome-stamp" class="stamp-editorial">
+      <span class="st-top">VOL. V</span>
+      <span class="st-mid">VERIFIED</span>
+      <span class="st-bot">2026</span>
+    </div>
+  </div>
+
+  <div class="noise"></div>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div class="page">
+
+    <!-- ══════════════════════════════════════
+         MASTHEAD
+    ══════════════════════════════════════ -->
+    <header class="masthead">
+      <div class="lang-switcher">
+        <button onclick="changeLanguage('vi')">VI</button>
+        <button onclick="changeLanguage('en')">EN</button>
+        <button onclick="changeLanguage('ja')">JA</button>
+      </div>
+      <p class="m-eye" data-lang="m_eye">Est. 2019 &nbsp;✦&nbsp; Ho Chi Minh City, Vietnam &nbsp;✦&nbsp; Creative Development &amp; Design</p>
+      <span class="m-name">THE HIEP TIMES</span>
+      <p class="m-tag" data-lang="m_tag">The Definitive Chronicle of One Creative Developer's Journey Through the Digital Frontier</p>
+      <div class="m-meta">
+        <span data-lang="m_vol">VOL. V, NO. 001</span>
+        <span data-lang="m_edition">✦ &nbsp; PORTFOLIO EDITION &nbsp; ✦</span>
+        <span id="date-out">JUNE 2026</span>
+      </div>
+    </header>
+
+    <hr class="rule-t">
+
+    <!-- BREAKING NEWS BANNER -->
+    <div class="banner">
+      <div><span class="b-lbl" data-lang="b_lbl1">Breaking News</span></div>
+      <h2 class="b-title" id="hl1" data-lang="hl1">Creative Developer Redefines the Digital Landscape</h2>
+    </div>
+    <hr class="rule">
+
+    <!-- ══════════════════════════════════════
+         HERO — THREE COLUMNS
+    ══════════════════════════════════════ -->
+    <div class="g3">
+
+      <!-- COL 1 : Lead Story -->
+      <div class="col reveal">
+        <p class="kicker" data-lang="kicker">★ Feature Story — Creative Technology</p>
+        <h3 class="hl-xl" data-lang="hl_xl">A mind that codes, designs &amp; disrupts</h3>
+        <p class="deck" data-lang="deck">From Saigon's creative underground emerges a developer who refuses to separate beauty from engineering — redefining what the web can feel like.</p>
+        <p class="byline" data-lang="byline">By The Editorial Staff &nbsp;✦&nbsp; Ho Chi Minh City, Vietnam</p>
+
+        <div class="bcols">
+          <p data-lang="p1">In the competitive digital landscape of Southeast Asia, a singular talent has carved out a rare position at the intersection of design thinking and technical mastery. Hiep is a creative developer whose work defies easy categorization — equally at home in a Figma file as in a terminal window, building experiences that feel as considered as they perform.</p>
+          <p data-lang="p2">Those who have collaborated with him describe someone who approaches each project the way a journalist approaches a story: through rigorous research, sharp observation, and an instinct for the detail that transforms the ordinary into the memorable.</p>
+          <p data-lang="p3">His hallmark — the refusal to treat aesthetics and function as opposing forces — shows up in every project. Every interaction earns its place. Every typographic choice carries intent. Every line of code serves the larger vision.</p>
+          <p data-lang="p4">Currently open to new projects and collaborative opportunities across brand identity, interactive experiences, and full-stack product development.</p>
+        </div>
+
+        <div class="pull" style="margin-top:18px">
+          <p data-lang="pull_q">"Design without code is a dream. Code without design is machinery."</p>
+          <cite data-lang="pull_c">— Hiep's Creative Manifesto</cite>
+        </div>
+
+        <div style="text-align:center; margin-top:16px">
+          <a href="#contact" class="btn magnetic"><span data-lang="btn_comm">Commission a Story </span></a>
+        </div>
+      </div>
+
+      <!-- COL 2 : Photo + Skills -->
+      <div class="col reveal" style="transition-delay:.12s">
+        <div class="photo"> 
+          <img src="images/hoahiep001.jpg" alt="Hoà Hiệp" class="photo-ph">
+          <p class="photo-cap" data-lang="photo_cap">Hiep — Creative Developer & Digital Storyteller. Currently stationed in Ho Chi Minh City, Vietnam.</p>
+        </div>
+
+        <div class="box">
+          <span class="bx-t" data-lang="bx_t1">Technical Arsenal</span>
+          <div class="skill">
+            <div class="skill-lbl"><span>Frontend Dev</span><span>95%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="95"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-lbl"><span>UI / UX Design</span><span>90%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-lbl"><span>React / Next.js</span><span>86%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="86"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-lbl"><span>Motion Design</span><span>80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+          <div class="skill" style="margin-bottom:0">
+            <div class="skill-lbl"><span>Backend / API</span><span>72%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="72"></div></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <span class="bx-t" data-lang="bx_t2">Also Fluent In</span>
+          <div class="tags">
+            <span class="tag">Figma</span><span class="tag">GSAP</span>
+            <span class="tag">Three.js</span><span class="tag">TypeScript</span>
+            <span class="tag">Tailwind</span><span class="tag">PostgreSQL</span>
+            <span class="tag">WebGL</span><span class="tag">Framer</span>
+            <span class="tag">Node.js</span><span class="tag">Prisma</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- COL 3 : Stats + Status -->
+      <div class="col reveal" style="transition-delay:.24s">
+        <div class="box">
+          <span class="bx-t" data-lang="bx_t3">By The Numbers</span>
+          <div class="stat"><span class="sl" data-lang="stat_l1">Years Active</span><span class="sv">5+</span></div>
+          <div class="stat"><span class="sl" data-lang="stat_l2">Projects Shipped</span><span class="sv">30+</span></div>
+          <div class="stat"><span class="sl" data-lang="stat_l3">Happy Clients</span><span class="sv">20+</span></div>
+          <div class="stat"><span class="sl" data-lang="stat_l4">Cups of Coffee</span><span class="sv">∞</span></div>
+        </div>
+
+        <div class="box">
+          <span class="bx-t" data-lang="bx_t4">Field of Expertise</span>
+          <p style="font-size:12px; line-height:1.65; color:var(--i1); margin-top:6px" data-lang="bx_p4">
+            Specializing in web experiences where compelling design meets robust engineering. Particular interest in interactive storytelling, brand identity, and performance-first development.
+          </p>
+          <div class="tags">
+            <span class="tag" data-lang="web_design">Web Design</span>
+            <span class="tag" data-lang="brand_identity">Brand Identity</span>
+            <span class="tag" data-lang="interactive">Interactive</span>
+            <span class="tag" data-lang="full_stack">Full-Stack</span>
+          </div>
+        </div>
+
+        <div class="box" style="text-align:center">
+          <span class="bx-t" data-lang="bx_t5">Current Status</span>
+          <div style="margin-top:10px; font-family:var(--fd); font-size:16px; font-weight:700" data-lang="stat_status">
+            <span style="color:var(--red)">●</span>&nbsp; Available for Work
+          </div>
+          <p style="font-family:var(--fm); font-size:8px; letter-spacing:.1em; color:var(--i1); margin-top:4px" data-lang="stat_time">
+            FREELANCE &amp; FULL-TIME
+          </p>
+        </div>
+
+        <div style="margin-top:12px; padding:12px; border:1px solid var(--i0); background:var(--p0)">
+          <p style="font-family:var(--fm); font-size:7.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--i2); margin-bottom:6px" data-lang="bx_t6">Recent Clients</p>
+          <p style="font-size:12px; line-height:1.6; color:var(--i1)" data-lang="bx_p6">
+            Fashion startups, SaaS companies, media agencies, and independent studios across Vietnam &amp; Southeast Asia.
+          </p>
+        </div>
+      </div>
+
+    </div><!-- /g3 -->
+
+    <!-- ══════════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════════ -->
+    <hr class="rule-d">
+    <div class="banner">
+      <div><span class="b-lbl" data-lang="b_lbl2">Featured Works — Selected Portfolio</span></div>
+      <h2 class="b-title" id="hl2" data-lang="hl2">Notable Dispatches From The Field</h2>
+    </div>
+    <hr class="rule">
+
+    <div class="projects">
+      <div class="proj reveal tilt">
+        <p class="p-num" data-lang="proj_num1">Field Report ✦ 001 &mdash; Brand Design</p>
+        <hr class="rule" style="margin:6px 0 8px">
+        <h4 class="p-hl" data-lang="proj_hl1">The Brand Identity Overhaul</h4>
+        <p class="p-body" data-lang="proj_body1">A comprehensive rebrand for a Saigon-based fashion label — from visual identity to digital touchpoints. The challenge: make luxury feel accessible without losing its edge.</p>
+        <div class="tags">
+          <span class="tag">Figma</span><span class="tag">Next.js</span><span class="tag">Framer</span>
+        </div>
+        <a href="#" class="p-more" data-lang="proj_more">Read Full Story </a>
+      </div>
+
+      <div class="proj reveal tilt" style="transition-delay:.1s">
+        <p class="p-num" data-lang="proj_num2">Field Report ✦ 002 &mdash; Full-Stack</p>
+        <hr class="rule" style="margin:6px 0 8px">
+        <h4 class="p-hl" data-lang="proj_hl2">The Real-Time Collaboration Platform</h4>
+        <p class="p-body" data-lang="proj_body2">A WebSocket-powered tool handling 500+ concurrent users without a stutter. Pure engineering disguised as elegance, elegance powered by engineering.</p>
+        <div class="tags">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">WebSocket</span>
+        </div>
+        <a href="#" class="p-more" data-lang="proj_more">Read Full Story </a>
+      </div>
+
+      <div class="proj reveal tilt" style="transition-delay:.2s">
+        <p class="p-num" data-lang="proj_num3">Field Report ✦ 003 &mdash; Interactive</p>
+        <hr class="rule" style="margin:6px 0 8px">
+        <h4 class="p-hl" data-lang="proj_hl3">The WebGL Brand Experience</h4>
+        <p class="p-body" data-lang="proj_body3">A 3D microsite at the intersection of storytelling, WebGL, and motion design. 50,000 unique visitors in its first 72 hours on the open web.</p>
+        <div class="tags">
+          <span class="tag">Three.js</span><span class="tag">GSAP</span><span class="tag">WebGL</span>
+        </div>
+        <a href="#" class="p-more" data-lang="proj_more">Read Full Story </a>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════ -->
+    <hr class="rule-d">
+    <div class="banner">
+      <div><span class="b-lbl" data-lang="b_lbl3">Classified Advertisements — Correspondence</span></div>
+      <h2 class="b-title" data-lang="hl3">Send a Dispatch</h2>
+    </div>
+    <hr class="rule">
+
+    <section id="contact" class="classified reveal">
+      <p class="cl-notice" data-lang="cl_notice">✦ &nbsp; Open for New Engagements &nbsp; ✦ &nbsp; Available for Freelance &nbsp; ✦ &nbsp; Based in Vietnam &nbsp; ✦</p>
+      <p class="cl-deck" data-lang="cl_deck">Whether you have a world-changing vision or simply a well-considered brief — the conversation starts here.</p>
+
+      <div class="c-grid">
+        <div class="c-item">
+          <p class="c-lbl" data-lang="c_lbl1">✉ Electronic Mail</p>
+          <p class="c-val"><a href="mailto:dohoahiep.job@gmail.com">dohoahiep.job@gmail.com</a></p>
+          <p class="c-sub" data-lang="c_sub1">Response within 24 hours</p>
+        </div>
+        <div class="c-item">
+          <p class="c-lbl" data-lang="c_lbl2">◈ Digital Presence</p>
+          <p class="c-val"><a href="#">hiep.design</a></p>
+          <p class="c-sub" data-lang="c_sub2">Portfolio &amp; case studies</p>
+        </div>
+        <div class="c-item">
+          <p class="c-lbl" data-lang="c_lbl3">◉ Social Dispatches</p>
+          <p class="c-val"><a href="https://www.instagram.com/tsyo__4/">@tsyo__4</a></p>
+          <p class="c-sub" data-lang="c_sub3">LinkedIn / GitHub / Instagram</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:22px">
+        <a href="mailto:dohoahiep.job@gmail.com" class="btn magnetic"><span data-lang="btn_conv">Begin the Conversation </span></a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         FOOTER
+    ══════════════════════════════════════ -->
+    <footer class="footer">
+      <span class="ornament" data-lang="f_ornament">✦  ✦  ✦</span>
+      <p class="ft" data-lang="f_copy">The Hiep Times Vol. V, No. 001 — All Rights Reserved 2026</p>
+      <p class="ft" style="margin-top:6px;"><a href="LICENSE" target="_blank" style="color: var(--i2); text-decoration: none; border-bottom: 1px dotted var(--i2);">VIEW LICENSE REPORT</a></p>
+      <p class="ft" style="margin-top:6px; opacity:.6" data-lang="f_pub">Published in Ho Chi Minh City, Vietnam ✦ Crafted with Intention & Great Care</p>
+    </footer>
+
+  </div><!-- /page -->
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
